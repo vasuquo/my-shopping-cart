@@ -124,14 +124,18 @@ footer {
   font-size: 2rem;
 }
 
-button {
+.button {
   padding: 1rem;
   border: 0.1rem #c0c0c0 solid;
   cursor: pointer;
-  background-color: #ffc000;
+  background-color: #f0f0f0;
 }
 
-button:hover {
+.button.primary {
+  background-color: #f0c040;
+}
+
+.button:hover {
   border: 0.1rem #888888 solid;
 }
 
@@ -142,4 +146,41 @@ button:hover {
   margin: 1rem;
   border-bottom: #c0c0c0 0.1rem solid;
   justify-content: space-between;
+}
+
+.cart {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.cart-header {
+  border-bottom: #c0c0c0 0.1rem solid;
+}
+
+.cart-items {
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.cart-items img {
+  width: 5rem;
+}
+
+.cart-items li {
+  display: flex;
+}
+
+.cart-items li div {
+  padding: 0.5rem;
+}
+
+.cart-items li div:last-child {
+  flex: 1;
+}
+
+.right {
+  text-align: right;
 }
