@@ -174,7 +174,7 @@ footer {
 }
 
 .cart-items li div {
-  padding: 0.5rem;
+  padding: 0.3rem;
 }
 
 .cart-items li div:last-child {
@@ -183,4 +183,20 @@ footer {
 
 .right {
   text-align: right;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.total > div {
+  font-size: 2rem;
+}
+
+.total > div,
+.total > button {
+  flex: 1;
 }

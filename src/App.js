@@ -31,11 +31,13 @@ class App extends React.Component {
   };
 
   removeFromCart = (product) => {
-    // impl
+    const cartItems = this.state.cartItems.slice();
+    this.setState({
+      cartItems: cartItems.filter((x) => x._id !== product._id),
+    });
   };
 
   sortProducts = (event) => {
-    // impl
     const sort = event.target.value;
     console.log(event.target.value);
     this.setState({
@@ -59,7 +61,6 @@ class App extends React.Component {
   };
 
   filterProducts = (event) => {
-    // impl
     console.log(event.target.value);
     if (event.target.value === "") {
       this.setState({ size: "", products: data.products });
